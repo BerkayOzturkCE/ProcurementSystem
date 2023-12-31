@@ -4,11 +4,20 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <InvariantGlobalization>true</InvariantGlobalization>
+    <InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ProcurementSystem,Projections.User\ProcurementSystem,Projections.User.csproj" />
+    <ProjectReference Include="..\..\..\Common\ProcurementSystem.Common\ProcurementSystem.Common.csproj" />
+    <ProjectReference Include="..\..\..\Projections\ProcurementSystem.Projections.Orders\ProcurementSystem.Projections.Orders.csproj" />
+    <ProjectReference Include="..\..\Core\ProcurementSystem.Api.Application\ProcurementSystem.Api.Application.csproj" />
+    <ProjectReference Include="..\..\Core\ProcurementSystem.Api.Domain\ProcurementSystem.Api.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\ProcurementSystem.Infrastructure.Persistence\ProcurementSystem.Infrastructure.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

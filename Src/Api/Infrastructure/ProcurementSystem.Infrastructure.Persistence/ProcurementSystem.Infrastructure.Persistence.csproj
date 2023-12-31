@@ -6,4 +6,29 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Bogus" Version="35.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReferance Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+		<PackageReferance Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+			<PrivateAssets>All</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReferance>
+		
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Common\ProcurementSystem.Common\ProcurementSystem.Common.csproj" />
+	  <ProjectReference Include="..\..\Core\ProcurementSystem.Api.Application\ProcurementSystem.Api.Application.csproj" />
+	  <ProjectReference Include="..\..\Core\ProcurementSystem.Api.Domain\ProcurementSystem.Api.Domain.csproj" />
+	</ItemGroup>
+
+
+
 </Project>
